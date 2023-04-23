@@ -1,0 +1,28 @@
+<div class="grid-container">
+  <div class="grid-item" *ngFor="let track of recommendedTracks; let i = index">
+
+    <div class="container-1">
+      <div class="sub-container-1">
+        <p class="track-name"><b>{{track.name}}</b></p>
+        <p class="artist-album" *ngFor="let artist of track.artists">{{artist.name}} - {{track.album.name}}</p>
+      </div>
+
+      <div class="sub-container-2">
+        <img src="assets/spotify.png" (click)="openUrl(track.external_urls.spotify)">
+
+        <span class="dot">{{track.similarity_score}} %</span>
+      </div>
+    </div>
+
+    <div class="container-2">
+
+      <img src="{{track.album.images[2].url}}">
+
+      <audio controls>
+        <source [src]="track.preview_url">
+      </audio>
+    </div>
+
+  </div>
+</div>
+

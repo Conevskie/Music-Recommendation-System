@@ -1,0 +1,16 @@
+<div class="container">
+
+  <div class="flexbox">
+    <div class="search">
+      <h1>Get some music recommendations!</h1>
+      <h3>Click on search icon, then type a song name.</h3>
+      <div>
+        <input #input type="text" placeholder="Search . . ." required>
+      </div>
+    </div>
+  </div>
+
+  <div class="dropdown"  *ngFor="let track of searchedTracks">
+    <p (click)="recommendForTrack(track)">{{track[0]}}</p>
+  </div>
+</div>

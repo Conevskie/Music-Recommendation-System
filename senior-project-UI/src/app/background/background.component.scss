@@ -1,0 +1,88 @@
+
+.container {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+
+  .image-bird {
+    transform: scale(0.5, 0.5);
+    position: absolute;
+    left: 50%;
+    bottom: -17%;
+
+  }
+
+  .image-note {
+    .no-1 {
+      transform: scale(0.15, 0.15) rotate(24deg);
+      position: absolute;
+      left: 55%;
+      bottom: 21%;
+      opacity: 0.7;
+
+    }
+
+    .no-3 {
+      transform: scale(0.2, 0.2) rotate(-48deg);
+      position: absolute;
+      left: 39%;
+      bottom: 33%;
+      opacity: 0.8;
+    }
+    .no-4 {
+      transform: scale(0.15, 0.15) rotate(-20deg);
+      position: absolute;
+      left: 41%;
+      bottom: 20%;
+      opacity: 0.8;
+    }
+    .no-2 {
+      transform: scale(0.15, 0.15) rotate(-20deg);
+      position: absolute;
+      left: 21%;
+      bottom: 27%;
+      opacity: 0.9;
+    }
+    .no-5 {
+      transform: scale(0.35, 0.35) rotate(15deg);
+      position: absolute;
+      left: 8%;
+      bottom: 45%;
+      opacity: 0.7;
+    }
+    .no-6{
+      transform: scale(0.02, 0.02) rotate(24deg);
+      position: absolute;
+      left: 6%;
+      bottom: -64%;
+      opacity: 0.8;
+    }
+
+    .no-7{
+      transform: scale(0.04, 0.04) rotate(-4deg);
+      position: absolute;
+      left: -19%;
+      bottom: -25%;
+      opacity: 0.8;
+    }
+
+    .no-8{
+      transform: scale(0.045, 0.045) rotate(-46deg);
+      position: absolute;
+      left: -10%;
+      bottom: -53%;
+      opacity: 0.9;
+    }
+
+    .no-9{
+      transform: scale(0.045, 0.045) rotate(-46deg);
+      position: absolute;
+      left: -44%;
+      bottom: -3%;
+      opacity: 0.9;
+    }
+  }
+
+}
+.container::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
+}
